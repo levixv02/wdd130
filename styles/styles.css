@@ -2,8 +2,35 @@
     text-decoration: none;
 }
 
+
+nav{
+    background-color: #758975;
+    padding: 15px;
+}
+
+nav a{
+    display: block;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+}
+
 main{
     max-width: 900px;
+}
+
+main h1{
+    color: black;
+    font-weight: bold;
+}
+
+main img{
+    max-width: 50%;
+    height: 50%;
+    border: 1px solid black;
+    padding: 10px;
+    box-shadow: rgb(14, 13, 13);
+    border-radius: 5px;
 }
 
 aside{
