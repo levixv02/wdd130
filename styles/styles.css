@@ -29,7 +29,6 @@ main img{
     height: 50%;
     border: 1px solid black;
     padding: 10px;
-    box-shadow: rgb(14, 13, 13);
     border-radius: 5px;
 }
 
