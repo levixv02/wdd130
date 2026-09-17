@@ -18,6 +18,11 @@ body{
     color: var(--accent1-color);
 }
 
+
+header{
+    background-color: var(--primary-color);
+    color: var(--accent2-color)
+}
 header, main, footer {
     width: 840px;
     margin: 0 auto;
@@ -41,7 +46,7 @@ header, main, footer {
     text-align: center;
     opacity: .7;
     background-color: var(--accent1-color);
-    color: rgb(244, 241, 241);
+    color: white;
 }
 
 .hero article img{
@@ -51,7 +56,7 @@ header, main, footer {
 
 h2{
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .hero article{
