@@ -25,10 +25,11 @@ main h1{
 }
 
 main img{
-    max-width: 50%;
+    width: 50%;
     height: 50%;
     border: 1px solid black;
     padding: 10px;
+    box-shadow: 0 4px 10px rgb(52, 47, 47);
     border-radius: 5px;
 }
 
