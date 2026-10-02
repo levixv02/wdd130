@@ -128,9 +128,6 @@ nav, p, section, article {
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
     justify-content: center;
-}
-
-.section2 {
     gap: 5px;
     flex-wrap: wrap;
 }
@@ -174,10 +171,6 @@ footer{
 
 /* About Us section */
 
-main{
-    box-sizing: border-box;
-}
-
 .infos {
     display: flex;
     flex-direction: column;
@@ -188,6 +181,11 @@ main{
 .infos p{
     padding:0;
     margin: 5px;
+}
+
+.map iframe{
+    width: 100%;
+    height: 100%;
 }
 
 .card {
@@ -222,18 +220,6 @@ form{
 .purposeMessage P{
     padding: 0;
     margin: 0 20px 0 0;
-}
-
-.message p{
-    padding: 0;
-    margin: 15px 0 0 0;
-}
-
-.checkbox p {
-    margin: 10px 5px;
-}
-.checkbox{
-    display: flex;
 }
 
 .btn{
