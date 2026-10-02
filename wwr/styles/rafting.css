@@ -222,6 +222,10 @@ form{
     margin: 0 20px 0 0;
 }
 
+#message::placeholder {
+    padding: 10px;
+}
+
 .btn{
     width: 100%;
     padding: 10px;
