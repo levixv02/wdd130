@@ -171,3 +171,110 @@ footer{
     width: 40px;
     text-decoration: none;
 }
+
+/* About Us section */
+
+main{
+    box-sizing: border-box;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infos p{
+    padding:0;
+    margin: 5px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+}
+
+form{
+    padding: 10px;
+}
+
+#name, #email{
+    padding: 10px;
+    margin-left: 40px;
+    border-radius: 5px;
+}
+
+#email{
+    padding: 10px;
+    margin-left: 43px;
+    margin-top: 5px;
+}
+
+.purposeMessage{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.purposeMessage P{
+    padding: 0;
+    margin: 0 20px 0 0;
+}
+
+.message p{
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+
+.checkbox p {
+    margin: 10px 5px;
+}
+.checkbox{
+    display: flex;
+}
+
+.btn{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Our Team */
+
+.team h2{
+    text-align: center;
+    margin-bottom: 10px; 
+}
+
+.ourteam{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+figure, figcaption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+figure img{
+    height: 100px;
+    width: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+figcaption p{
+    margin: 0;
+    padding: 0;
+}
