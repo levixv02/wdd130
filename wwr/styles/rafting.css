@@ -1,8 +1,10 @@
+
+
 :root{
-    --primary-color:#055a05;
-    --secondary-color:#f4a261;
-    --accent1-color:#264653;
-    --accent2-color:#e9c46a;
+    --primary-color: #055a05;
+    --secondary-color: #b85c00;
+    --accent1-color: #264653;
+    --accent2-color: #e9c46a;
     --heading-font: Verdana, Geneva, Tahoma, sans-serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -13,7 +15,8 @@
     box-sizing: border-box;
 }
 
-input:focus , textarea:focus{
+input:focus,
+textarea:focus{
     outline: none;
 }
 
@@ -22,13 +25,17 @@ body{
     color: var(--accent1-color);
 }
 
+a{
+    color: #055a05;
+}
+
 header{
     background-color: var(--primary-color);
     color: var(--accent2-color);
     display: grid;
     grid-template-columns: 200px 1fr;
     align-items: center;
-    gap:10px;
+    gap: 10px;
     padding: 10px 20px;
 }
 
@@ -37,11 +44,11 @@ header{
     justify-content: center;
     align-items: center;
 }
+
 .logo img{
     border-radius: 50%;
     width: 100px;
     height: auto;
-
 }
 
 nav ul{
@@ -52,27 +59,28 @@ nav ul{
     font-size: 1.5rem;
 }
 
-header nav a {
+header nav a{
     text-decoration: none;
     padding: 5px;
-    color:aliceblue;
+    color: #ffffff;
     transition: 1s ease-in;
-    border: 1px solid #e9c56a7a;
+    border: 1px solid rgba(233, 196, 106, 0.5);
     border-radius: 20px;
 }
 
 header nav a:hover{
-    background-color: #e9c46a;
-    color: black;
+    background-color: var(--accent2-color);
+    color: #000000;
 }
 
-
-header, main, footer {
+header,
+main,
+footer{
     width: 840px;
     margin: 0 auto;
 }
 
-.hero {
+.hero{
     position: relative;
 }
 
@@ -88,9 +96,15 @@ header, main, footer {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: .7;
+    opacity: .9;
     background-color: var(--accent1-color);
-    color: white;
+    color: #ffffff;
+}
+
+.hero article{
+    position: absolute;
+    top: 80px;
+    background-color: var(--accent2-color);
 }
 
 .hero article img{
@@ -103,13 +117,10 @@ h2{
     color: var(--secondary-color);
 }
 
-.hero article{
-    position: absolute;
-    top: 80px;
-    background-color:var(--accent2-color);
-}
-
-nav, p, section, article {
+nav,
+p,
+section,
+article{
     margin: 15px;
     padding: 5px;
 }
@@ -122,18 +133,13 @@ nav, p, section, article {
 }
 
 .section1 h2{
-    grid-column: 1/-1;
+    grid-column: 1 / -1;
     text-align: center;
 }
 
 .section1 img{
-    width:  100%;
+    width: 100%;
     height: auto;
-}
-
-.section2 h2{
-    grid-column: 1/-1;
-    text-align: center;
 }
 
 .section2{
@@ -142,10 +148,14 @@ nav, p, section, article {
     align-items: center;
     justify-content: center;
     gap: 5px;
-    flex-wrap: wrap;
 }
 
-.section2 figure {
+.section2 h2{
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.section2 figure{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,7 +170,7 @@ nav, p, section, article {
 
 footer{
     background-color: var(--primary-color);
-    color:white;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,9 +192,9 @@ footer{
     text-decoration: none;
 }
 
-/* About Us section */
+/* About Us */
 
-.infos {
+.infos{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -192,7 +202,7 @@ footer{
 }
 
 .infos p{
-    padding:0;
+    padding: 0;
     margin: 5px;
 }
 
@@ -201,7 +211,7 @@ footer{
     height: 100%;
 }
 
-.card {
+.card{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
@@ -212,15 +222,14 @@ form{
     padding: 10px;
 }
 
-#name, #email{
+#name,
+#email{
     padding: 10px;
-    margin-left: 40px;
     border-radius: 5px;
+    border: 1px solid #999;
 }
 
 #email{
-    padding: 10px;
-    margin-left: 43px;
     margin-top: 5px;
 }
 
@@ -230,12 +239,12 @@ form{
     margin-top: 10px;
 }
 
-.purposeMessage P{
+.purposeMessage p{
     padding: 0;
     margin: 0 20px 0 0;
 }
 
-#message::placeholder {
+#message::placeholder{
     padding: 10px;
 }
 
@@ -246,14 +255,20 @@ form{
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
 }
 
+.btn:hover{
+    background-color: #043d04;
+}
 
 /* Our Team */
 
 .team h2{
     text-align: center;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 .ourteam{
@@ -263,7 +278,8 @@ form{
     gap: 30px;
 }
 
-figure,.team figcaption{
+figure,
+.team figcaption{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -282,28 +298,31 @@ figure,.team figcaption{
     padding: 0;
 }
 
-
-/* home page */
+/* Home */
 
 .newsletter{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:10px;
+    gap: 10px;
     margin: 30px 0;
 }
 
-#name, #email{
+.newsletter #name,
+.newsletter #email{
     margin: 0;
 }
 
 .newsletter button{
     padding: 10px;
     cursor: pointer;
-
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
 
-.call {
+.call{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -313,16 +332,17 @@ figure,.team figcaption{
 
 .call h3{
     font-size: 1.5rem;
-    color: rgb(46, 132, 46);
+    color: var(--primary-color);
 }
+
 .call button{
-    /* background-color: var(--primary-color); */
-    background: green;
+    background-color: var(--primary-color);
     padding: 10px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
 }
+
 .call button a{
     color: white;
     text-decoration: none;
@@ -330,14 +350,10 @@ figure,.team figcaption{
     font-size: 1.2rem;
 }
 
-.Adventure {
+.Adventure{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin-top:10px; 
-}
-
-.Adventure figure{
-    height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 10px;
 }
 
 .Adventure figure img{
@@ -359,13 +375,12 @@ figure,.team figcaption{
     margin: 0;
 }
 
-
 /* Trips */
 
 .tripsh1{
     text-align: center;
     margin-top: 20px;
-    color: green;
+    color: var(--primary-color);
 }
 
 .trips{
@@ -376,22 +391,19 @@ figure,.team figcaption{
 }
 
 .trips a{
-    background: green; 
-    color:white; 
-    padding:10px 20px; 
-    text-decoration:none;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
     border-radius: 10px;
+    font-weight: bold;
 }
 
 .adventures{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    margin-top:10px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10px;
     gap: 10px;
-}
-
-.adventures figure{
-    height: auto;
 }
 
 .adventures figure img{
@@ -411,19 +423,22 @@ figure,.team figcaption{
     text-align: center;
 }
 
-table {
+table{
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
-table, th, td {
+table,
+th,
+td{
     border: 1px solid #333;
     padding: 10px;
     text-align: center;
 }
 
-th {
-    background-color: #055a05;
+th{
+    background-color: var(--primary-color);
     color: white;
 }
+
